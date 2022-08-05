@@ -1,21 +1,27 @@
+using System;
+using UnityEngine;
 
-using System.Collections.Generic;
 
 namespace PTSD.minigame
 {
-     public class Formula
+     [CreateAssetMenu(fileName = "Formula", menuName ="Data/Formulas")]
+     public class Formula : ScriptableObject
      {
-          private KeyValuePair<Element, int> formula;
+          public ElementAndQuantity[] formula;
 
-          public Formula(KeyValuePair<Element, int> formula)
+          public int getTotalAtomicNumber()
+          {
+               int counter = 0;
+               for(int i = 0; i < formula.Length; i++)
+                    counter += (formula[i].GetElement().getAtomicNumber() * formula[i].getQuantinty());
+               
+               return counter;
+          } 
+
+          public Formula(ElementAndQuantity[] formula)
           {
                this.formula = formula;
           }
 
-          public bool matches(Formula f2)
-          {
-               
-               return true;
-          }
      }
 }

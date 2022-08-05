@@ -1,18 +1,19 @@
+using UnityEngine;
+
 namespace PTSD.minigame
 {
-    public class Element
+    [CreateAssetMenu(fileName = "Element", menuName ="Data/Elements")]
+    public class Element : ScriptableObject
     {
-        public string elementName { get; private set; }
-        public int atomicNumber { get; private set; }
-        public ElementType type { get; private set; }
+        [SerializeField] private string elementName = null;
+        [SerializeField] private int atomicNumber = 0;
+        [SerializeField] private ElementType type = 0;
 
+        public string getElementName(){ return elementName; }
+        
+        public int getAtomicNumber(){ return atomicNumber; }
 
-        public Element(string element, int atomicNumber, ElementType type)
-        {
-            elementName = element;
-            this.atomicNumber = atomicNumber;
-            this.type = type;
-        }
+        public ElementType GetElementType(){ return type; }
     }
 
     public enum ElementType
@@ -25,7 +26,7 @@ namespace PTSD.minigame
         Lantanoids,
         Actinoids,
         Transition_Metals,
-        P_Block_Metals,
+        d_Block_Metals,
         Halogens,
         Noble_gases
     }

@@ -1,0 +1,48 @@
+Guida Ottimizzazione farmaci
+
+Il gioco consiste nel replicare una formula chimica di un determinato farmaco
+posizionando i corretti elementi nell'ordine corretto, con le basi corrette.
+
+-per vincere il giocatore deve ricreare una formula che abbia un preciso numero atomico totale
+ tale numero atomico sarà statico e verrà deciso farmaco per farmaco, in modo da avere un unica formula
+ corretta (il numero atomico da raggiungere sarà visibile in alto a destra)
+
+-si può scegliere tra più basi, ogni base cambia la disposizione degli elementi e dei moltiplicatori 
+ (anche per le basi, quella corretta sarà solo una)
+
+-si può scegliere tra 10 elementi, di cui saranno visibili i numeri atomici, ogni elemento è di un determinato 
+ tipo, metalli, non metalli, gas nobili ecc ecc, i tipi degli elementi non cambiano in sè il numero atomico della
+ formula ma servono per far rispettare al giocatore i requisiti secondari (visibili in alto a sinistra) in modo da
+ non creare formule diverse da quella prestabilita 
+ 
+
+Precisazioni doverose: 
+
+-per capire il tipo dell'elemento si fa riferimento al suo colore(Blu: Metallo, Giallo: Non Metallo, Grigio: Gas Nobile, Rosa: Semimetallo)
+
+-non è possibile visualizzare il numero atomico attuale della formula che il giocatore sta creando, il giocatore
+ per verificare il numero atomico della formula che sta creando deve contare a mente, è visibile a schermo solo il
+ numero atomico che deve raggiungere
+ 
+-i requisiti secondari sono obbligatori e devono essere rispettati tutti per poter completare il minigioco
+
+-se conferma una formula sbagliata, il giocatore perde una vita (ce ne sono 3 ogni volta che si inizia il minigioco,  se si perde 3 volte il minigioco salta) 
+
+
+adesso creo due prototipi di formula chimica:
+
+Soluzione Dakin-Carrel(Permanganato di potassio): 
+Formula: KMnO4
+Base: ABC4
+Peso atomico: 158
+Basi disponibili: ABC4, A2B(C)^3, 3A(BC)^2
+Elementi disponibili: K(24,Blu), Mn(50,Blu), O(21,Giallo), H(9,Giallo), S(16,Giallo), Au(80,Blu), Ne(22,Grigio), Sc(31,Blu), Rb(4,Blu), Fe(26,Blu)
+Requisiti Secondari: non metallo nella 3a posizione, Usa il manganese (Mn)
+
+Soluzione Dakin-Carrel(Acido salicilico): 
+Formula: C7H6O3
+Base: A7B6C3
+Peso atomico: 152
+Basi disponibili: A7B6C3, A2(B4C)^3, (3AB5C)^2
+Elementi disponibili: K(24,Blu), Mn(50,Blu), O(12,Giallo), H(10,Giallo), S(16,Giallo), C(8,Giallo), Ne(22,Grigio), Sc(31,Blu), Rb(4,Blu), Fe(26,Blu)
+Requisiti Secondari:Usa il Carbonio, usa 10 non metalli nella formula

@@ -1,1 +1,12 @@
-C8H9NO2 -paracetamolo
+https://tavolaperiodica.zanichelli.it/it
+
+
+// Formule Brute (molecolari)
+
+C8H9NO2        -paracetamolo
+C16H13ClN2O    -valium
+C6H9I2NO       -iodopovidone
+C2H6O          -etanolo
+C16H14O3       -ketoprofene
+C7H6O3         -acido salicilico (antisettico dentifricio)
+KMnO4          -permanganato di potassio (base di della medicina moderna per trattare lesioni elementari della cute)
