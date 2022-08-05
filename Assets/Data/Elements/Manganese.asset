@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93886ccc2d825944e88a2990659f832b, type: 3}
   m_Name: Manganese
   m_EditorClassIdentifier: 
-  elementName: 
-  atomicNumber: 0
-  type: 0
+  elementName: Mn
+  atomicNumber: 25
+  type: 8

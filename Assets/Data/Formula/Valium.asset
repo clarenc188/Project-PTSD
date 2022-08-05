@@ -12,3 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfebc9f98f91fe044b72402349244b0f, type: 3}
   m_Name: Valium
   m_EditorClassIdentifier: 
+  formula:
+  - element: {fileID: 11400000, guid: e90d682ff188d454d9a4e506c658d004, type: 2}
+    quantity: 16
+  - element: {fileID: 11400000, guid: deb8841178b11b24f82c96f12253708b, type: 2}
+    quantity: 13
+  - element: {fileID: 11400000, guid: d9c8a392e2ec1504a9d8578f7ac1f8e0, type: 2}
+    quantity: 1
+  - element: {fileID: 11400000, guid: fd026a26397b9f14e9eaa93b8f953b45, type: 2}
+    quantity: 2
+  - element: {fileID: 11400000, guid: 97e46e97413e1dd4ba03d6ce490b742c, type: 2}
+    quantity: 1
