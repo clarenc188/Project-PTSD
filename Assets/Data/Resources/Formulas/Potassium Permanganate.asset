@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2b4ad93469dfff4d8b182a1056f45d8, type: 3}
+  m_Name: Potassium Permanganate
+  m_EditorClassIdentifier: 
+  formula:
+  - element: {fileID: 11400000, guid: ff6383ce5b0be884eb7dd4e6973c6254, type: 2}
+    quantity: 1
+  - element: {fileID: 11400000, guid: 65106a49b6cb603439d96a757d1289c6, type: 2}
+    quantity: 1
+  - element: {fileID: 11400000, guid: 97e46e97413e1dd4ba03d6ce490b742c, type: 2}
+    quantity: 4
+  TemplateFormulas:
+  - formula:
+    - element: {fileID: 0}
+      quantity: 1
+    - element: {fileID: 0}
+      quantity: 1
+    - element: {fileID: 0}
+      quantity: 4
+  - formula:
+    - element: {fileID: 0}
+      quantity: 5
+    - element: {fileID: 0}
+      quantity: 6
