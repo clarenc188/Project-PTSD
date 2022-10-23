@@ -11,8 +11,8 @@ namespace PTSD.minigame.Components
     {
 
         [SerializeField] private Element element;
-        private TextMeshProUGUI AtomicNumber;
-        private TextMeshProUGUI Symbol;
+        [SerializeField] private TextMeshProUGUI AtomicNumber;
+        [SerializeField] private TextMeshProUGUI Symbol;
         [SerializeField] private Image BackGround;
         [SerializeField] private Image Border;
         private RectTransform elementTransform;
@@ -20,8 +20,6 @@ namespace PTSD.minigame.Components
         void Awake()
         {
             elementTransform = GetComponent<RectTransform>();
-            AtomicNumber = transform.Find("AtomicNumber").GetComponent<TextMeshProUGUI>();
-            Symbol = transform.Find("Symbol").GetComponent<TextMeshProUGUI>();
         }
 
         public RectTransform getElementTransform() => elementTransform;

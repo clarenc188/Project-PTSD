@@ -287,11 +287,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Conferma
-
-    E
-
-    Verifica'
+  m_text: Conferma
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f9329ae0abcae4546900a10882c94aca, type: 2}
   m_sharedMaterial: {fileID: 4305367148481689659, guid: f9329ae0abcae4546900a10882c94aca, type: 2}
@@ -479,6 +475,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5361788794791466579, guid: c75ea477302ad1d44858543e4200da44, type: 3}
   m_PrefabInstance: {fileID: 4629642}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &333038773 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9174660942395426583, guid: a5ab83c1a1694df4488d0754c66a854d, type: 3}
+  m_PrefabInstance: {fileID: 483488900}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41739396a7468894fb7d05e69fba8ea8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &340102817 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 988286760380006605, guid: a5ab83c1a1694df4488d0754c66a854d, type: 3}
@@ -498,7 +505,7 @@ GameObject:
   - component: {fileID: 363905358}
   - component: {fileID: 363905357}
   m_Layer: 0
-  m_Name: Conferma
+  m_Name: Confirm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -734,7 +741,7 @@ PrefabInstance:
     - target: {fileID: 1146607161639533281, guid: a5ab83c1a1694df4488d0754c66a854d, type: 3}
       propertyPath: loader
       value: 
-      objectReference: {fileID: 1863814218}
+      objectReference: {fileID: 0}
     - target: {fileID: 1982781933894811836, guid: a5ab83c1a1694df4488d0754c66a854d, type: 3}
       propertyPath: parent
       value: 
@@ -977,7 +984,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -20, y: -20}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!1001 &692432346
@@ -1142,10 +1149,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
+    m_Left: 10
+    m_Right: 10
+    m_Top: 10
+    m_Bottom: 10
   m_ChildAlignment: 8
   m_StartCorner: 3
   m_StartAxis: 1
@@ -1376,6 +1383,17 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: fd026a26397b9f14e9eaa93b8f953b45, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c75ea477302ad1d44858543e4200da44, type: 3}
+--- !u!114 &823293163 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9174660942395426583, guid: a5ab83c1a1694df4488d0754c66a854d, type: 3}
+  m_PrefabInstance: {fileID: 988286760719584876}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41739396a7468894fb7d05e69fba8ea8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &899163755 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5361788794791466579, guid: c75ea477302ad1d44858543e4200da44, type: 3}
@@ -1994,7 +2012,7 @@ PrefabInstance:
     - target: {fileID: 1146607161639533281, guid: a5ab83c1a1694df4488d0754c66a854d, type: 3}
       propertyPath: loader
       value: 
-      objectReference: {fileID: 1863814218}
+      objectReference: {fileID: 0}
     - target: {fileID: 1982781933894811836, guid: a5ab83c1a1694df4488d0754c66a854d, type: 3}
       propertyPath: ElementSlot
       value: 
@@ -2099,7 +2117,7 @@ Canvas:
   m_GameObject: {fileID: 1756808759}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -2120,11 +2138,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1863814217}
-  - component: {fileID: 1863814218}
   - component: {fileID: 1863814219}
   m_Layer: 0
   m_Name: UI-Loader
-  m_TagString: MinigameLoader
+  m_TagString: MinigameComponents
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2145,18 +2162,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1863814218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863814216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 852a4db712dfd8649bb88798de3af6de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1863814219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2166,10 +2171,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1863814216}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fc9ddcdb4f1a5c42a98d4558d9a550f, type: 3}
+  m_Script: {fileID: 11500000, guid: a02b936c4b24ad74ab6cb147dbd434f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AtomicNumber: {fileID: 645918938}
+  gameatomicnumber: {fileID: 645918938}
+  templatecomponents0: {fileID: 823293163}
+  templatecomponents1: {fileID: 333038773}
+  templatecomponents2: {fileID: 1900659024}
+  checkbutton: {fileID: 0}
+--- !u!114 &1900659024 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9174660942395426583, guid: a5ab83c1a1694df4488d0754c66a854d, type: 3}
+  m_PrefabInstance: {fileID: 1600175034}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41739396a7468894fb7d05e69fba8ea8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1921443472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2348,7 +2368,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938193504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 2.392181, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2458,7 +2478,7 @@ PrefabInstance:
     - target: {fileID: 1146607161639533281, guid: a5ab83c1a1694df4488d0754c66a854d, type: 3}
       propertyPath: loader
       value: 
-      objectReference: {fileID: 1863814218}
+      objectReference: {fileID: 0}
     - target: {fileID: 1982781933894811836, guid: a5ab83c1a1694df4488d0754c66a854d, type: 3}
       propertyPath: parent
       value: 

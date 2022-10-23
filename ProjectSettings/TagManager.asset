@@ -8,9 +8,9 @@ TagManager:
   - Symbol
   - Formula
   - GameCanvas
-  - MinigameLoader
   - FormulaSlot
   - ElementSlot
+  - MinigameComponents
   layers:
   - Default
   - TransparentFX

@@ -5,7 +5,7 @@ using UnityEngine;
 namespace PTSD.minigame.data
 {
      [CreateAssetMenu(fileName = "Formula", menuName ="Data/Formulas")]
-     public class Formula : ScriptableObject
+     public class MinigameData : ScriptableObject
      {
           [SerializeField] private ElementAndQuantity[] formula;
 

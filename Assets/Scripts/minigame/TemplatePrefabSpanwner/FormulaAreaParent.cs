@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace PTSD.minigame.TemplatePrefabSpawner
 {
-    public class PrefabParent : MonoBehaviour
+    public class FormulaAreaParent : MonoBehaviour
     {
         private List<GameObject> InstanceList = new List<GameObject>();
 

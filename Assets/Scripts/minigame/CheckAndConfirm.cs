@@ -4,14 +4,13 @@ using UnityEngine;
 using PTSD.minigame.TemplatePrefabSpawner;
 using PTSD.minigame.data;
 using PTSD.minigame.Components;
-using PTSD.minigame.Loaders;
 
 namespace PTSD.minigame
 {
     public class CheckAndConfirm : MonoBehaviour
     {
         public Transform FormulaSlot;
-        private Formula formula;
+        private MinigameData minigamedata;
         private GameObject[] ObjectList;
         
         void Awake()
@@ -22,13 +21,13 @@ namespace PTSD.minigame
 
         private bool Check()
         {
-            if(ObjectList.Length == 0 || ObjectList.Length != formula.Length || ObjectList == null)
+            if(ObjectList.Length == 0 || ObjectList.Length != minigamedata.Length || ObjectList == null)
                 return false;
             for(int i = 0; i < ObjectList.Length; i++)
             {
                 var Item = ObjectList[i].GetComponent<SlotAndNumberComponents>().GetElementAndQuantity();
-                if(!(Item.GetElement() == formula.getFormula()[i].GetElement())
-                    && (Item.getQuantinty() == formula.getFormula()[i].getQuantinty()))
+                if(!(Item.GetElement() == minigamedata.getFormula()[i].GetElement())
+                    && (Item.getQuantinty() == minigamedata.getFormula()[i].getQuantinty()))
                     return false;
             }
             return true;
@@ -36,9 +35,8 @@ namespace PTSD.minigame
 
         public void Confirm()
         {
-            ObjectList = FormulaSlot.GetComponent<PrefabParent>().toArray();
-            formula = GameObject.FindGameObjectWithTag("MinigameLoader")
-                        .GetComponent<MinigameComponents>().getFormula();
+            ObjectList = FormulaSlot.GetComponent<FormulaAreaParent>().toArray();
+            minigamedata = MinigameManager.getData();
             
             if (Check())
                 Debug.Log("Yeeee");

@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using PTSD.minigame.data;
-using PTSD.minigame.Loaders;
 using TMPro;
 
 namespace PTSD.minigame.Components
@@ -14,16 +13,27 @@ namespace PTSD.minigame.Components
         private FormulaTemplate template;
         private TextMeshProUGUI TextTemplate;
 
-        void Awake()
+        public void Load()
         {
-            Formula formula = GameObject.FindGameObjectWithTag("MinigameLoader")
-                        .GetComponent<MinigameComponents>().getFormula();
-                        
+            template = ((MinigameManager.getData().getTemplateFormulas().Length) > ID) ?
+                        MinigameManager.getData().getTemplateFormulas()[ID] : null;
             TextTemplate = GetComponentInChildren<TextMeshProUGUI>();
-            template = (formula.getTemplateFormulas().Length) > ID ?
-                        formula.getTemplateFormulas()[ID] : null;
             
         }
+
+        public void Setup()
+        {   
+            TextTemplate.text = "";
+            char placeholder = 'A';
+            
+            if (template != null)
+            {
+                for (int i = 0; i < template.Length; i++, placeholder++)
+                    TextTemplate.text += $"{placeholder}{template.getFormula()[i].getQuantinty()}";
+            }
+        }
+
+        public int getID() => ID;
 
         public TextMeshProUGUI getText() => TextTemplate;
 

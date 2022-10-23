@@ -359,9 +359,9 @@ GameObject:
   - component: {fileID: 5361788794791466579}
   - component: {fileID: 5361788794791466578}
   - component: {fileID: 5361788794791466580}
-  - component: {fileID: 5781766191652152624}
   - component: {fileID: 6235545436349737440}
   - component: {fileID: 629772316857772068}
+  - component: {fileID: 7293195710660857422}
   m_Layer: 0
   m_Name: Element
   m_TagString: Untagged
@@ -425,18 +425,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9590bd1908e4d70428edcd856401dd4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5781766191652152624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5361788794791466576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a188dc91bd946764a842bdae2be40c93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6235545436349737440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,6 +438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   element: {fileID: 0}
+  AtomicNumber: {fileID: 5443860618159119691}
+  Symbol: {fileID: 7337242875436203201}
   BackGround: {fileID: 5361788795697652218}
   Border: {fileID: 5504051198593061167}
 --- !u!225 &629772316857772068
@@ -464,6 +454,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &7293195710660857422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5361788794791466576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a188dc91bd946764a842bdae2be40c93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5361788795697652216
 GameObject:
   m_ObjectHideFlags: 0

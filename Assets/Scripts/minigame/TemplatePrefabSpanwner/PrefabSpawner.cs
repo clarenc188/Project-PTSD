@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using PTSD.minigame.data;
-using PTSD.minigame.Loaders;
 using PTSD.minigame.DragAndDrop;
 using PTSD.minigame.Components; 
 using System.Linq;
@@ -14,14 +13,14 @@ namespace PTSD.minigame.TemplatePrefabSpawner
     public class PrefabSpawner : MonoBehaviour
     {
         [SerializeField] public GameObject prefab;
-        private PrefabParent InstanceList;
+        private FormulaAreaParent InstanceList;
         public Transform FormulaPanel;
 
         void Awake()
         {
             FormulaPanel = GameObject.FindGameObjectWithTag("FormulaSlot")
                             .GetComponent<Transform>();
-            InstanceList = FormulaPanel.GetComponent<PrefabParent>();
+            InstanceList = FormulaPanel.GetComponent<FormulaAreaParent>();
         }
 
         public void InstantiateTemplate()
